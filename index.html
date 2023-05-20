@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sadiq Ramanu Portfolio</title>
+    <script src="https://kit.fontawesome.com/9e2d9a22b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <!-- <img src="port_img/Saddiq..png" class="logo"> insert logo here -->
+                <div class="logo">Sadiq R.</div>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#">GitHub</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Software Engineer
+                </p>
+                <h1>Hi, I'm <span>Sadiq</span> Ramanu,<br> A <span>Software</span> Engineer From <span>NY</span>.
+                </h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1"> -->
+                <!-- <img src="#">  insert immage here when you have it ready-->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Sadiq, a passionate and dedicated computer sceince student. I am strongly
+                    interested in creating
+                    efficient and user-friendly applications that solve real-world problems.
+
+                    Currently pursuing my Bachelor's degree in Computer Science at the University at Buffalo.
+                    Alongside my academic pursuits, I actively engage in personal projects to enhance my
+                    problem-solving abilities.
+                    I am particularly passionate about web development and software applications, where I can
+                    combine my creativity with
+                    technical skills to build visually appealing and responsive websites and applications.
+                    Additionally, I have experience
+                    developing applications using C, Javascript, Python, and Scala, and I enjoy exploring new
+                    technologies and frameworks to
+                    stay updated with the latest industry trends.
+                </p>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!-- <p class="tab-links">Experience</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Tech Stack</span><br>C, Python, Scala, HTML, CSS, Javascript, Sass, Bootstrap,
+                            MongoDB, React, Node.js</li>
+                        <li><span>UI/UX</span><br>Experience designing user experience interface</li>
+                        <li><span>Web Development</span><br>Experience building Web apps</li>
+                        <li><span>App Development</span><br>Experience building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>BS in Computer Science(University at Buffalo) </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!------ Projects --------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Project Description</p>
+                    <a href="#">In Progress</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>App Designs</h2>
+                    <p>Project Description</p>
+                    <a href="#">In Progress</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>Fitness App</h2>
+                    <p>Project Description</p>
+                    <a href="#">In Progress</a>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title contact">Contact Me</h1>
+
+                <!-- <div class="social-icons"> -->
+                <!-- <a href="www.linkedin.com/in/ramanu-sadiq"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a> -->
+                <!-- </div> -->
+                <!-- <a href="" download class="btn btn2">Download Resume</a> -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Send</button>
+                </form>
+                <span id="msg"></span>
+                <div class="icon-container">
+                    <p class="center-align">You can also send me an email<br>
+                        <i class="fa-sharp fa-solid fa-envelope"></i>sadiq.ramanu@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="copyright">
+
+        <div class="social-icons footer">
+            <a href="www.linkedin.com/in/ramanu-sadiq"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+
+
+        </div>
+        <p>&copy; 2023 Sadiq Ramanu. All rights reserved.</p>
+    </footer>
+    <!-- <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+    </form> -->
+
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwmkFse5-1vuZTNmAErAzII-yLWi9d61KmROKcpl5nuF2jsrNY5F5R15aUmRa0Q4APGEQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Sent."
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 2500)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
